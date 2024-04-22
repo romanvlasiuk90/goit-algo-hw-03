@@ -2,7 +2,7 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     # Перевірка валідності вхідних даних
-    if min >= 1 and max <= 1000 and max > min and quantity > 0:
+    if min >= 1 and max <= 1000 and max > min and quantity > 0 and quantity <= (max-min+1):
         # Оголошуємо множину і наповнюємо по к-сті чисел лотереї
         numbers_set = set()
         while len(numbers_set) < quantity:
